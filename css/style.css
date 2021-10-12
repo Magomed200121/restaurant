@@ -1,3 +1,9 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 a {
   text-decoration: none;
 }
@@ -25,7 +31,6 @@ header {
   background-image: url("../img/header-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
 }
 
 .header__top {
@@ -124,10 +129,132 @@ header {
   font-size: 18px;
   line-height: 25px;
   color: #fff;
+  position: relative;
+}
+
+.header__bottom-eat::before {
+  content: '';
+  position: absolute;
+  width: 60px;
+  height: 2px;
+  background: #C4C4C4;
+  top: 50%;
+  left: -50%;
+}
+
+.header__bottom-eat::after {
+  content: '';
+  position: absolute;
+  width: 60px;
+  height: 2px;
+  background: #C4C4C4;
+  top: 50%;
+  right: -50%;
 }
 
 .header__bottom-btn {
   display: block;
   margin: 0 auto;
+  width: 137px;
+  height: 47px;
+  background: #FF7400;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 21px;
+  margin-bottom: 124px;
+}
+
+.header__card {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__card-item {
+  z-index: 10;
+  margin-top: -100px;
+  width: 349px;
+  height: 328px;
+  background: #FFFFFF;
+  padding: 35px 43px 0 43px;
+  margin-right: 35px;
+  box-shadow: 10px 10px 40px 20px rgba(0, 0, 0, 0.1);
+}
+
+.header__card-img {
+  display: block;
+  margin: 0 auto;
+}
+
+.header__card-title {
+  font-size: 26px;
+  line-height: 30px;
+  color: #2C2C2C;
+  margin-bottom: 20px;
+}
+
+.header__card-title span {
+  color: #BC9060;
+}
+
+.header__card-text {
+  color: #656363;
+  font-size: 26px;
+  line-height: 30px;
+}
+
+.header__card-inner {
+  text-align: center;
+}
+
+.discover {
+  padding-top: 166px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.discover__inner {
+  width: 444px;
+  text-align: center;
+}
+
+.discover__text {
+  font-size: 16px;
+  line-height: 22px;
+  color: #656363;
+  margin-bottom: 40px;
+}
+
+.discover__title {
+  font-size: 54px;
+  line-height: 62px;
+  margin-bottom: 20px;
+}
+
+.discover__title span {
+  color: #D67E34;
+}
+
+.eat {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.eat__item {
+  margin-right: 60px;
+}
+
+.eat__item-tite {
+  color: #BC9060;
+  font-size: 40px;
+  line-height: 54px;
+}
+
+.eat__item-text {
+  color: #000000;
+  font-size: 20px;
+  line-height: 27px;
 }
 /*# sourceMappingURL=style.css.map */
