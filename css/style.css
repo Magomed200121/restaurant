@@ -257,4 +257,52 @@ header {
   font-size: 20px;
   line-height: 27px;
 }
+
+.order {
+  background-image: url("../img/order-bg.jpg");
+}
+
+.order__inner {
+  padding: 80px 0 100px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.order__inner-title {
+  font-size: 52px;
+  line-height: 60px;
+  color: #D67E34;
+  width: 660px;
+}
+
+.order__inner-btn {
+  width: 157px;
+  height: 47px;
+  color: #fff;
+  background: #FF7400;
+  border: none;
+  cursor: pointer;
+}
+
+.order__inner-text {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 33px;
+  color: #fff;
+  margin-top: 20px;
+}
+
+.dish__inner {
+  display: flex;
+}
+
+.dish__gamb {
+  margin-left: 30px;
+}
+
+.dish__gamb img {
+  display: block;
+  margin-bottom: 30px;
+}
 /*# sourceMappingURL=style.css.map */
