@@ -19,6 +19,7 @@ ul
 
 .container
     max-width: 1300px
+    padding: 0 20px 0 20px
     margin: 0 auto
 
 header
@@ -401,3 +402,91 @@ header
     background-repeat: no-repeat
     background-size: cover
     height: 732px
+
+.burger--active
+    display: none
+
+@media ( max-width: 940px )
+    .header__call-text
+        display: none
+    .header__bet
+        display: none
+    .header__bottom-text
+        font-size: 45px
+    .header__bottom-title
+        font-size: 70px
+    .header__bottom-inner
+        margin: auto
+
+@media ( max-width: 700px )
+    /** .header__nav
+        display: none **/
+    .header__btn
+        display: none
+    .header__menu
+        transform: translateY(-200%)
+        position: absolute
+        left: 0
+        top: 150px
+        text-align: center
+        width: 100%
+        display: block
+        background-color: black
+        transition: all 0.5s
+        z-index: 10
+    .header__menu-item
+        padding: 35px 0 35px 0
+        cursor: pointer
+        display: block
+    .burger--active
+        display: block
+        cursor: pointer
+
+.menuactive
+    transform: translateY(0)
+
+@media ( max-width: 600px )
+    .header__bottom-text
+        font-size: 40px
+        line-height: 40px
+    .header__bottom-inner
+        width: 490px
+    .header__bottom-title
+        font-size: 60px
+
+@media ( max-width: 570px )
+    .header__bottom-inner
+        width: 440px
+    .header__bottom-text
+        font-size: 37px
+        line-height: 30px
+    .header__bottom-title
+        font-size: 55px
+
+@media ( max-width: 490px )
+    .header__bottom-inner
+        width: 400px
+
+@media ( max-width: 450px )
+    .header__bottom-text
+        font-size: 33px
+    .header__bottom-title
+        font-size: 49px
+    .header__bottom-inner
+        width: 339px
+
+@media ( max-width: 390px )
+    .header__bottom-inner
+        margin: 0
+        width: 291px
+    .header__bottom-text
+        font-size: 30px
+    .header__bottom-eat
+        &::before, &::after
+            display: none
+            
+    .header__bottom-title
+        font-size: 42px
+        line-height: 55px
+    .header
+        background-image: url('../img/adaptive-img.jpg')
