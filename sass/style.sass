@@ -3,6 +3,7 @@ body
     margin: 0
     padding: 0
     box-sizing: border-box
+    overflow-x: hidden
 a
     text-decoration: none
 
@@ -417,12 +418,23 @@ header
         margin: auto
     .discover__img
         display: none
+    .order__inner-title
+        font-size: 40px
+        line-height: 44px
+    .order__inner-text
+        font-size: 22px
+        line-height: 14px
+    .order__inner
+        display: block
+    .order__inner-btn
+        margin-top: 35px
+    .order
+        margin-top: 80px
 @media ( max-width: 950px )
     .header__card-title
         font-size: 25px
     .header__card-text
         font-size: 15px
-
 @media ( max-width: 940px )
     .header__call-text
         display: none
@@ -450,7 +462,7 @@ header
         margin-top: 20px
         width: 257px
     /** .header__nav
-        display: none **/
+     display: none **/
     .header__btn
         display: none
     .header__menu
@@ -471,7 +483,12 @@ header
     .burger--active
         display: block
         cursor: pointer
-
+    .order__inner-title
+        font-size: 34px
+        width: 470px
+    .order__inner-text
+        font-size: 20px
+        line-height: 5px
 .menuactive
     transform: translateY(0)
 
@@ -493,8 +510,6 @@ header
     .header__bottom-title
         font-size: 55px
 
-
-
 @media ( max-width: 490px )
     .header__bottom-inner
         width: 400px
@@ -504,7 +519,12 @@ header
         width: 319px
     .eat
         justify-content: normal
-
+    .order__inner-title
+        font-size: 28px
+        width: 370px
+    .order__inner-text
+        font-size: 17px
+        line-height: 1px
 @media ( max-width: 450px )
     .header__bottom-text
         font-size: 33px
@@ -515,6 +535,14 @@ header
     .header__card-item
         width: 212px
 
+@media ( max-width: 400px )
+    .order__inner-title
+        font-size: 25px
+        line-height: 32px
+        width: 309px
+    .order__inner-text
+        font-size: 15px
+        line-height: 0px
 @media ( max-width: 390px )
     .header__bottom-inner
         margin: 0
@@ -524,7 +552,7 @@ header
     .header__bottom-eat
         &::before, &::after
             display: none
-            
+
     .header__bottom-title
         font-size: 42px
         line-height: 55px
