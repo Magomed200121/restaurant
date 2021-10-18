@@ -551,6 +551,15 @@ header {
   .header__card-text {
     font-size: 20px;
   }
+  .dish__inner {
+    display: block;
+  }
+  .dish__gamb {
+    margin-left: 0;
+  }
+  .dish__img {
+    text-align: center;
+  }
 }
 
 @media (max-width: 1000px) {
@@ -662,6 +671,12 @@ header {
     font-size: 20px;
     line-height: 5px;
   }
+  .dish__text-title {
+    font-size: 20px;
+  }
+  .dish__text-span {
+    font-size: 23px;
+  }
 }
 
 .menuactive {
@@ -714,6 +729,9 @@ header {
   .order__inner-text {
     font-size: 17px;
     line-height: 1px;
+  }
+  .dish__title {
+    font-size: 45px;
   }
 }
 
